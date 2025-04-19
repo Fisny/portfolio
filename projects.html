@@ -1,0 +1,526 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Fisniku Portfolio" />
+    <meta property="og:description" content="Check out my Portfolio :)!" />
+    <meta property="og:image" content="https://pm1.aminoapps.com/7919/e2665d1a9d96ab664dd95dc14b3f35d0658a355dr1-1440-1080v2_hq.jpg" />
+    <title>Fisniku Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="master.css" rel="stylesheet" />
+    <link href="projects.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">FATBARDH FISNIKU</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item"><a class="nav-link fontBold textPers" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link fontBold textPers" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><span class="nav-link fontBold textPers" data-bs-toggle="modal" data-bs-target="#modalContact">Contact</span></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container body-content pt-4" id="main-content">
+        <div id="mainProjects" class="">
+            <div data-aos="fade-up">
+                <h1 class="textPers">My Projects</h1>
+            </div>
+
+            <div class="m50"></div>
+
+            <div class="container">
+                <!-- laravel -->
+                <div class="row rowLaravel" data-aos="fade-up">
+                    <div class="d-flex align-items-center">
+                        <img class="laravelLogo" src="Img/Laravel.svg.png" alt="laravelLogo" />
+                        <h5 class="laravelColor">Laravel</h5>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 projectCardContenitore">
+                        <div><span>BDoctors</span></div>
+                        <div class="projectCard projectbdoctors" data-bs-toggle="modal" data-bs-target="#modalbdoctors">
+                            <img src="Img/bdoctors.png" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m50"></div>
+                <!-- asp.net -->
+                <div class="row rowAspNet" data-aos="fade-up">
+                    <div class="d-flex align-items-center">
+                        <img class="laravelLogo" src="Img/asp.net.png" alt="asp.net" />
+                        <h5 class="aspNetColor">ASP.NET</h5>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 projectCardContenitore" data-bs-toggle="modal" data-bs-target="#modaldhlsprem">
+                        <div><span>Sprem</span></div>
+                        <div class="projectCard projectdhl">
+                            <img src="Img/DHL-Emblem.png" alt="dhllogo" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 projectCardContenitore" data-bs-toggle="modal" data-bs-target="#modaldhlhubtour">
+                        <div><span>HubTour</span></div>
+                        <div class="projectCard projectdhl">
+                            <img src="Img/DHL-Emblem.png" alt="dhllogo" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 projectCardContenitore" data-bs-toggle="modal" data-bs-target="#modaldhltraining">
+                        <div><span>Training</span></div>
+                        <div class="projectCard projectdhl">
+                            <img src="Img/DHL-Emblem.png" alt="dhllogo" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 projectCardContenitore" data-bs-toggle="modal" data-bs-target="#modaldhlmycustomsdox">
+                        <div><span>MyCustomsDox</span></div>
+                        <div class="projectCard projectdhl">
+                            <img src="Img/DHL-Emblem.png" alt="dhllogo" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 projectCardContenitore" data-bs-toggle="modal" data-bs-target="#modaldhlmcdc">
+                        <div><span>MCDC</span></div>
+                        <div class="projectCard projectdhl">
+                            <img src="Img/DHL-Emblem.png" alt="dhllogo" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 projectCardContenitore" data-bs-toggle="modal" data-bs-target="#modalinyacht">
+                        <div><span>IN-YACHT</span></div>
+                        <div class="projectCard projectinyacht">
+                            <img src="Img/logo-in-yacht-pos.svg" alt="inyachtlogo" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 projectCardContenitore" data-bs-toggle="modal" data-bs-target="#modalinfleet">
+                        <div><span>IN-FLEET</span></div>
+                        <div class="projectCard projectinfleet">
+                            <img src="Img/logo-in-fleet-pos.svg" alt="infleetlogo" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="m50"></div>
+                <!-- blazor -->
+                <div class="row rowBlazor" data-aos="fade-up">
+                    <div class="d-flex align-items-center">
+                        <img class="laravelLogo" src="Img/blazor-seeklogo.svg" alt="laravelLogo" />
+                        <h5 class="blazorColor">Blazor</h5>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6 projectCardContenitore" data-bs-toggle="modal" data-bs-target="#modalblazorinyacht">
+                        <div><span>IN-YACHT Blazor</span></div>
+                        <div class="projectCard projectinyacht">
+                            <img src="Img/logo-in-yacht-pos.svg" alt="inyachtlogo" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- modali -->
+        <!--LARAVEL bdoctors-->
+        <div class="modal fade" id="modalbdoctors" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-laravel">
+                    <div class="modal-header">
+                        <img class="laravelLogo" src="Img/Laravel.svg.png" alt="laravelLogo" />
+                        <span class="bi bi-x-circle" data-bs-dismiss="modal" aria-label="Close"></span>
+                    </div>
+                    <div class="modal-body">
+                        <div style="display: flex; justify-content: center; align-items: center; background: #0078e0; height: 70px; border-radius: 10px;">
+                            <img src="Img/bdoctors.png" class="logoModal" />
+                        </div>
+                        <p></p>
+                        <p>The BDoctors project is the final result of the Boolean Careers course, where the fundamentals of coding are taught. This fully functional educational project serves as proof that everything we learned was instrumental to my success in the professional world. Thanks to this project, I secured my first .NET developer contract in 2021.</p>
+                        <p>Project link: <a href="https://github.com/Fisny/BDoctors" style="color: #0078e0;" target='_blank'>BDOCTORS</a> </p>
+                        <div style="color: white;">
+                            The main technologies used are:
+                            <ul>
+                                <li>Laravel 7</li>
+                                <li>Vue 2.x</li>
+                                <li>Bootstrap 4.x</li>
+                                <li>Bootstrap Icons</li>
+                                <li>Carbon</li>
+                                <li>Braintree</li>
+                                <li>GitHub</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--ASPNET sprem-->
+        <div class="modal fade" id="modaldhlsprem" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-aspnet">
+                    <div class="modal-header">
+                        <img class="laravelLogo" src="Img/asp.net.png" alt="laravelLogo" />
+                        <span class="bi bi-x-circle" data-bs-dismiss="modal" aria-label="Close"></span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalcontentfordhl">
+                            <img src="Img/DHL-Emblem.png" alt="dhllogo" class="logoModal" />
+                            <span class="text-center dhlRed modalfordhltext">SPREM</span>
+                        </div>
+                        <p></p>
+                        <p>Project link: <a href="https://mydhl.it/spremweb/" class="dhlYellow" target="_blank">SPREM</a></p>
+                        <div style="color: white;">
+                            The main technologies used are:
+                            <ul>
+                                <li>ASP.NET</li>
+                                <li>Jquery</li>
+                                <li>Bootstrap</li>
+                                <li>Log4Net</li>
+                                <li>Dapper</li>
+                                <li>C#</li>
+                                <li>Microsoft SQL Server</li>
+                                <li>Azure DevOps</li>
+                                <li>C# Jobs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ASPNET hubtour-->
+        <div class="modal fade" id="modaldhlhubtour" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-aspnet">
+                    <div class="modal-header">
+                        <img class="laravelLogo" src="Img/asp.net.png" alt="laravelLogo" />
+                        <span class="bi bi-x-circle" data-bs-dismiss="modal" aria-label="Close"></span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalcontentfordhl">
+                            <img src="Img/DHL-Emblem.png" alt="dhllogo" class="logoModal" />
+                            <span class="text-center dhlRed modalfordhltext">HUBTOUR</span>
+                        </div>
+                        <p></p>
+                        <p>Project link: <a href="https://mydhl.it/HubTour/" class="dhlYellow" target="_blank">HUBTOUR</a></p>
+                        <div style="color: white;">
+                            The main technologies used are:
+                            <ul>
+                                <li>ASP.NET</li>
+                                <li>Jquery & Other JS libraries</li>
+                                <li>Bootstrap</li>
+                                <li>Log4Net</li>
+                                <li>Dapper</li>
+                                <li>C#</li>
+                                <li>Microsoft SQL Server</li>
+                                <li>Azure DevOps</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ASPNET training-->
+        <div class="modal fade" id="modaldhltraining" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-aspnet">
+                    <div class="modal-header">
+                        <img class="laravelLogo" src="Img/asp.net.png" alt="laravelLogo" />
+                        <span class="bi bi-x-circle" data-bs-dismiss="modal" aria-label="Close"></span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalcontentfordhl">
+                            <img src="Img/DHL-Emblem.png" alt="dhllogo" class="logoModal" />
+                            <span class="text-center dhlRed modalfordhltext">TRAINING</span>
+                        </div>
+                        <p></p>
+                        <p>Project link: <a href="https://mydhl.it/Training/" class="dhlYellow" target="_blank">TRAINING</a></p>
+                        <div style="color: white;">
+                            The main technologies used are:
+                            <ul>
+                                <li>ASP.NET</li>
+                                <li>Jquery</li>
+                                <li>Bootstrap</li>
+                                <li>Log4Net</li>
+                                <li>Dapper</li>
+                                <li>C#</li>
+                                <li>Microsoft SQL Server</li>
+                                <li>Azure DevOps</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ASPNET mycustomsdox-->
+        <div class="modal fade" id="modaldhlmycustomsdox" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-aspnet">
+                    <div class="modal-header">
+                        <img class="laravelLogo" src="Img/asp.net.png" alt="laravelLogo" />
+                        <span class="bi bi-x-circle" data-bs-dismiss="modal" aria-label="Close"></span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalcontentfordhl">
+                            <img src="Img/DHL-Emblem.png" alt="dhllogo" class="logoModal" />
+                            <span class="text-center dhlRed modalfordhltext">MYCUSTOMSDOX</span>
+                        </div>
+                        <p></p>
+                        <p>Project link: <a href="https://mydhl.it/MyCustomsDox/" class="dhlYellow" target="_blank">MYCUSTOMSDOX</a></p>
+                        <div style="color: white;">
+                            The main technologies used are:
+                            <ul>
+                                <li>ASP.NET</li>
+                                <li>Jquery & Other JS libraries</li>
+                                <li>Bootstrap</li>
+                                <li>Log4Net</li>
+                                <li>Dapper</li>
+                                <li>C#</li>
+                                <li>Microsoft SQL Server</li>
+                                <li>Azure DevOps</li>
+                                <li>C# Jobs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ASPNET mcdc-->
+        <div class="modal fade" id="modaldhlmcdc" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-aspnet">
+                    <div class="modal-header">
+                        <img class="laravelLogo" src="Img/asp.net.png" alt="laravelLogo" />
+                        <span class="bi bi-x-circle" data-bs-dismiss="modal" aria-label="Close"></span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modalcontentfordhl">
+                            <img src="Img/DHL-Emblem.png" alt="dhllogo" class="logoModal" />
+                            <span class="text-center dhlRed modalfordhltext">MCDC</span>
+                        </div>
+                        <p></p>
+                        <p>Project link: <a href="https://mydhl.it/mcdc/" class="dhlYellow" target="_blank">MCDC</a></p>
+                        <div style="color: white;">
+                            The main technologies used are:
+                            <ul>
+                                <li>ASP.NET</li>
+                                <li>Jquery & Other JS libraries</li>
+                                <li>Bootstrap</li>
+                                <li>Log4Net</li>
+                                <li>Dapper</li>
+                                <li>C#</li>
+                                <li>Microsoft SQL Server</li>
+                                <li>Azure DevOps</li>
+                                <li>C# Jobs</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ASPNET inyacht-->
+        <div class="modal fade" id="modalinyacht" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-aspnet">
+                    <div class="modal-header">
+                        <img class="laravelLogo" src="Img/asp.net.png" alt="laravelLogo" />
+                        <span class="bi bi-x-circle" data-bs-dismiss="modal" aria-label="Close"></span>
+                    </div>
+                    <div class="modal-body">
+                        <div style="display: flex; justify-content: center; align-items: center; background: #bcebeb; border-radius: 10px; height: 70px;">
+                            <img src="Img/logo-in-yacht-pos.svg" alt="inyachtlogo" class="logoModal" />
+                        </div>
+                        <p></p>
+                        <!--<p>Ho lavorato al progetto IN-YACHT per oltre 6-7 mesi.</p>
+                        <p>Il progetto era stato inizialmente sviluppato da un fornitore terzo, il che ha limitato la mia possibilità di seguirlo in modo completo, come accaduto invece per i progetti di DHL.</p>
+                        <p>Nonostante ciò, sono soddisfatto di aver potuto contribuire, portando innovazione e una nuova energia al team di sviluppo.</p>
+                        <p>Le mie principali attività riguardavano la creazione, il test e l’ottimizzazione delle API utilizzate sia dall’applicazione che dal sito web associato.</p>
+                        <p>Inoltre, ho apportato numerose migliorie al codice C#, concentrandomi sul debugging per migliorare la stabilità e le prestazioni complessive del sistema.</p>-->
+                        <p>I worked on the IN-YACHT project for over 6–7 months.</p>
+                        <p>The project was initially developed by a third-party provider, which limited my ability to oversee it fully, as I was able to do with the DHL projects.</p>
+                        <p>Despite this, I am pleased to have been able to contribute, bringing innovation and new energy to the development team.</p>
+                        <p>My main responsibilities involved creating, testing, and optimizing the APIs used by both the application and the associated website.</p>
+                        <p>Additionally, I made numerous improvements to the C# code, focusing on debugging to enhance the overall stability and performance of the system.</p>
+                        <p>Project link: <a href="https://www.in-yacht.com/" style="color: #bcebeb;" target="_blank">IN-YACHT</a></p>
+                        <div style="color: white;">
+                            The main technologies used are:
+                            <ul>
+                                <li>ASP.NET</li>
+                                <li>Jquery & Other JS libraries</li>
+                                <li>Bootstrap</li>
+                                <li>C#</li>
+                                <li>DevExpress</li>
+                                <li>Microsoft SQL Server</li>
+                                <li>Bitbucket & Jira</li>
+                                <li>API /Odata</li>
+                                <li>Postman</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ASPNET infleet-->
+        <div class="modal fade" id="modalinfleet" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-aspnet">
+                    <div class="modal-header">
+                        <img class="laravelLogo" src="Img/asp.net.png" alt="laravelLogo" />
+                        <span class="bi bi-x-circle" data-bs-dismiss="modal" aria-label="Close"></span>
+                    </div>
+                    <div class="modal-body">
+                        <div style="display: flex; justify-content: center; align-items: center; background: #ffcd92; border-radius: 10px; height: 70px;">
+                            <img src="Img/logo-in-fleet-pos.svg" alt="infleetlogo" class="logoModal" />
+                        </div>
+                        <p></p>
+                        <!--
+                        <p>IN-FLEET è una mia proposta di progetto, concepita come alternativa alla versione originale già operativa in produzione: (<a href="https://jms.in-fleet.net" style="color: #ffcd92;" target="_blank">ORIGINAL IN-FLEET</a>).</p>
+                        <p>Lo sviluppo di questa versione mira a garantire una completa autonomia nella gestione del codice, evitando la dipendenza da DevExpress, considerata limitante in questo contesto.</p>
+                        <p>Abbiamo effettuato significativi interventi sull’aspetto grafico e sulla reattività, mantenendo tuttavia una certa familiarità visiva con la versione attualmente in produzione.</p>
+                        <p>Per il Front-End si è scelto di utilizzare ASP.NET in combinazione con jQuery e Bootstrap, mentre il Back-End è stato sviluppato in C#.</p>
+                        <p>Come ORM è stato utilizzato Dapper e, per la gestione di dati complessi o visualizzazioni avanzate, sono state implementate Stored Procedure su SQL.</p>
+                        <p>Sebbene il progetto non sia stato rilasciato in produzione, è stato realizzato un video dimostrativo che ne illustra le funzionalità.</p>
+                        -->
+                        <p>IN-FLEET is a project proposal of mine, conceived as an alternative to the original version currently in production: (<a href="https://jms.in-fleet.net" style="color: #ffcd92;" target="_blank">ORIGINAL IN-FLEET</a>).</p>
+                        <p>The development of this version aims to ensure complete autonomy in code management, avoiding dependency on DevExpress, which was considered limiting in this context.</p>
+                        <p>We made significant improvements to the design and responsiveness while maintaining a visual familiarity with the version currently in production.</p>
+                        <p>For the Front-End, ASP.NET was used in combination with jQuery and Bootstrap, while the Back-End was developed in C#.</p>
+                        <p>Dapper was used as the ORM, and for managing complex data or advanced visualizations, Stored Procedures were implemented on SQL.</p>
+                        <p>Although this project was not released into production, a demo video was created to showcase its features.</p>
+
+                        <p>Project link: <a href="https://www.youtube.com/watch?v=G2v3eO4j6eM" style="color: #ffcd92;" target="_blank">IN-FLEET</a></p>
+                        <div style="color: white;">
+                            The main technologies used are:
+                            <ul>
+                                <li>ASP.NET</li>
+                                <li>Jquery & Other JS libraries</li>
+                                <li>Bootstrap</li>
+                                <li>Log4Net</li>
+                                <li>Dapper</li>
+                                <li>C#</li>
+                                <li>Microsoft SQL Server</li>
+                                <li>Azure DevOps</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--BLAZOR inyacht-->
+        <div class="modal fade" id="modalblazorinyacht" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content modal-blazor">
+                    <div class="modal-header">
+                        <img class="laravelLogo" src="Img/blazor-seeklogo.svg" alt="laravelLogo" />
+                        <span class="bi bi-x-circle" data-bs-dismiss="modal" aria-label="Close"></span>
+                    </div>
+                    <div class="modal-body">
+                        <div style="display: flex; justify-content: center; align-items: center; background: #bcebeb; border-radius: 10px; height: 70px;">
+                            <img src="Img/logo-in-yacht-pos.svg" alt="inyachtlogo" class="logoModal" />
+                        </div>
+                        <p></p>
+                        <!--
+                        <div class="lingIta">
+                            <p>IN-YACHT BLAZOR è un progetto nato per mostrare la transizione tecnologica dallo stack DevExpress (ASP.NET, .NET 4) a Blazor (.NET 8).</p>
+                            <p>Purtroppo, nonostante il considerevole impegno profuso, il progetto non è mai stato rilasciato in produzione.</p>
+                            <p>Ho scelto di includerlo comunque tra i progetti realizzati, poiché rappresenta per me una sfida personale nella quale ho superato me stesso.</p>
+                            <p>Partendo dal suo predecessore, In-Yacht, già operativo in produzione, sono stati perfezionati alcuni aspetti fondamentali, come la reattività dell’interfaccia e le prestazioni di velocità nell'elaborazione dei dati.</p>
+                            <p>Inizialmente, avevo previsto l'utilizzo di DAPPER come ORM, con cui ho familiarità, ma per introdurre un elemento di innovazione abbiamo deciso di adottare Entity Framework.</p>
+                        </div>
+                        -->
+
+                        <div>
+                            <p>IN-YACHT BLAZOR is a project designed to showcase the technological transition from the DevExpress stack (ASP.NET, .NET 4) to Blazor (.NET 8).</p>
+                            <p>Unfortunately, despite considerable effort, the project was never released into production.</p>
+                            <p>I chose to include it among my completed projects, as it represents a personal challenge in which I exceeded my own expectations.</p>
+                            <p>Building on its predecessor, In-Yacht, which is already in production, I refined essential aspects, such as interface responsiveness and data processing speed.</p>
+                            <p>Initially, I planned to use DAPPER as the ORM, as I am familiar with it, but to introduce an element of innovation, we decided to adopt Entity Framework.</p>
+                        </div>
+
+                        <p>Project link: <a href="https://www.youtube.com/watch?v=ifkOw148pvQ" style="color: #bcebeb;" target="_blank">IN-YACHT BLAZOR</a></p>
+                        <div style="color: white;">
+                            The main technologies used are:
+                            <ul>
+                                <li>BLAZOR .NET 8</li>
+                                <li>Radzen</li>
+                                <li>Bootstrap</li>
+                                <li>Entity FrameWork</li>
+                                <li>C#</li>
+                                <li>Microsoft SQL Server</li>
+                                <li>Azure DevOps</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 text-white">
+        <p>&copy; <span id="year"></span></p>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="modalContact" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-contact">
+                <div class="modal-header justify-content-end" style="border: none;">
+                    <span class="bi bi-x-circle" data-bs-dismiss="modal" aria-label="Close"></span>
+                </div>
+                <div class="modal-body">
+                    <p>Email: bardi.fisniku@gmail.com</p>
+                    <p>Linkedin: <a href="https://www.linkedin.com/in/bardi-fisniku-311aa2165/" style="color: white;" target="_blank">Bardi Fisniku</a></p>
+                </div>
+                <div class="modal-footer" style="border: none;">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        AOS.init();
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
