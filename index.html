@@ -1,125 +1,301 @@
-﻿<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Fisniku Portfolio" />
-    <meta property="og:description" content="Check out my Portfolio :)!" />
-    <meta property="og:image" content="https://pm1.aminoapps.com/7919/e2665d1a9d96ab664dd95dc14b3f35d0658a355dr1-1440-1080v2_hq.jpg" />
-    <title>Fisniku Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <script src="newCache.js"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="master.css?ts=<DATE_HERE>" rel="stylesheet" />
-    <link href="index.css?ts=<DATE_HERE>" rel="stylesheet" />
-    <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#08090b" />
+  <meta name="description" content="Bardi Fisniku — Full Stack .NET Developer based in Genoa, Italy." />
+  <meta property="og:title" content="Bardi Fisniku — Portfolio" />
+  <meta property="og:description" content="Full Stack .NET Developer. Enterprise platforms, APIs, dashboards, Blazor, SQL and responsive UI." />
+  <title>Bardi Fisniku — Full Stack .NET Developer</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">FATBARDH FISNIKU</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                    <li class="nav-item"><a class="nav-link fontBold textPers" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link fontBold textPers" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><span class="nav-link fontBold textPers" data-bs-toggle="modal" data-bs-target="#modalContact">Contact</span></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <canvas id="noiseCanvas" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="page-shell">
+    <header class="site-header" data-reveal>
+      <a class="brand" href="#top" aria-label="Go to homepage">
+        <span class="brand-mark">BF</span>
+        <span class="brand-text">Bardi Fisniku</span>
+      </a>
 
-    <!-- Content -->
-    <div class="container body-content pt-4" id="main-content">
-        <div class="container MainContentClass d-flex justify-content-center align-items-center">
-            <div class="row">
-                <div class="col-md-8 col-sm-12 welcomeHiIm" data-aos="fade-right">
-                    <div class="welcomeBarra"></div>
-                    <div>
-                        <h1>Hi!</h1>
-                    </div>
-                    <div class="d-flex">
-                        <h1>I'm</h1>
-                        <h1 class="textPers ml10">Fatbardh Fisniku</h1>
-                    </div>
-                    <div>
-                        <h1>a Software & Web Developer</h1>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 welcomeUlLi" data-aos="fade-left">
-                    <ul>
-                        <li>
-                            <h5 class="textPers fontBold">ABOUT ME</h5>
-                        </li>
-                        <li>
-                            <a href="about.html" id="hrefAbout" class="btn">LEARN MORE <span class="bi bi-arrow-right"></span></a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <h5 class="textPers fontBold">MY PROJECTS</h5>
-                        </li>
-                        <li>
-                            <a href="projects.html" id="hrefProjects" class="btn">BROWSE PORTFOLIO <span class="bi bi-arrow-right"></span></a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <h5 class="textPers fontBold">SOCIALS</h5>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/ohfisny/" target='_blank' class="bi bi-instagram mr15 textPers"></a>
-                            <a href="https://github.com/Fisny" target='_blank' class="bi bi-github mr15 textPers"></a>
-                            <a href="https://www.linkedin.com/in/bardi-fisniku-311aa2165/" target='_blank' class="bi bi-linkedin textPers"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
 
-    <!-- Footer -->
-    <footer class="text-center mt-5 text-white">
-        <p>&copy; <span id="year"></span></p>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow"><span class="live-dot"></span> Genoa, Italy · Available for smart teams</p>
+          <h1>
+            Full Stack .NET Developer building
+            <span>enterprise-grade web products.</span>
+          </h1>
+          <p class="hero-lead">
+            I work across web apps, APIs, analytical dashboards, third-party integrations and responsive UI —
+            mostly with C#, ASP.NET Core, Blazor, SQL and modern frontend foundations.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary magnetic" href="#projects">See work</a>
+            <a class="btn ghost magnetic" href="mailto:bardi.fisniku@gmail.com?subject=Contact%20via%20Portfolio">Contact me</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel tilt-card" data-reveal data-delay="120" aria-label="Profile summary">
+          <div class="panel-topline">
+            <span>profile.json</span>
+            <span class="status-pill">online</span>
+          </div>
+          <pre><code>{
+  "name": "Bardi Fisniku",
+  "role": ".NET Full Stack Developer",
+  "focus": ["APIs", "Blazor", "SQL", "UI"],
+  "current": "Edisoftware / Zucchetti",
+  "previous": ["We Make Apps", "Marine Tools", "Adiacent"],
+  "mode": "clean, scalable, functional"
+}</code></pre>
+          <div class="panel-footer">
+            <span>4+ years dev exp.</span>
+            <span>Italy · Australia</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="metric-strip" data-reveal>
+        <div><strong>2022→now</strong><span>professional .NET work</span></div>
+        <div><strong>60+</strong><span>superyachts platform context</span></div>
+        <div><strong>.NET 4→10</strong><span>legacy to modern stack</span></div>
+        <div><strong>UI + backend</strong><span>from pixels to SQL</span></div>
+      </section>
+
+      <section class="section section-grid about-section" id="about">
+        <div class="section-label" data-reveal>01 · About</div>
+        <div class="section-content" data-reveal>
+          <h2>Not just “frontend” or “backend”. I like owning the flow.</h2>
+          <p>
+            I’m a full stack developer born in 1999, based in Genoa. My work usually sits between business logic,
+            SQL data flows, XML/UI configuration, dashboards, integrations and responsive interfaces. Before software,
+            I worked in non-destructive testing: that background made me practical, precise and comfortable with real-world constraints.
+          </p>
+          <p>
+            Recently I worked in Melbourne on startup and enterprise projects, then returned to Italy where I’m working on
+            Marine2 / OndaMarine: an enterprise platform based on ASP.NET Core, Blazor and the EstroWF/XAF framework.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="section-heading" data-reveal>
+          <span class="section-label">02 · Experience</span>
+          <h2>Selected timeline</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item" data-reveal>
+            <div class="time">Jan 2026 — Present</div>
+            <div class="timeline-card tilt-card">
+              <h3>Edisoftware / Zucchetti</h3>
+              <p class="role">Full Stack .NET Developer · Genoa</p>
+              <p>Marine2 / OndaMarine development, EstroWF/XAF UI components, ControlDescriptors, Behaviours, XAF/XSD schemas, multi-tenant features and DevExpress Blazor integration.</p>
+              <div class="chips"><span>ASP.NET Core</span><span>Blazor</span><span>XAF</span><span>DevExpress</span><span>SQL</span></div>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal>
+            <div class="time">Feb 2025 — Aug 2025</div>
+            <div class="timeline-card tilt-card">
+              <h3>We Make Apps</h3>
+              <p class="role">Full Stack .NET Developer · Melbourne</p>
+              <p>ASP.NET Core apps and APIs, Mapbox / GeoJSON, Chart.js dashboards, file exports, backend performance work, AWS communication and API reorganization.</p>
+              <div class="chips"><span>.NET 6/8/9</span><span>Razor Pages</span><span>Mapbox</span><span>Chart.js</span><span>AWS</span></div>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal>
+            <div class="time">Jun 2024 — Dec 2024</div>
+            <div class="timeline-card tilt-card">
+              <h3>Marine Tools / IN-YACHT</h3>
+              <p class="role">Full Stack .NET Developer · Genoa</p>
+              <p>Superyacht management platform, microservices with ASP.NET Core and Blazor, C# jobs, Dapper, EF, stored procedures, REST APIs and OData.</p>
+              <div class="chips"><span>Blazor</span><span>Dapper</span><span>EF</span><span>OData</span><span>SQL Server</span></div>
+            </div>
+          </article>
+
+          <article class="timeline-item" data-reveal>
+            <div class="time">Feb 2022 — Jun 2024</div>
+            <div class="timeline-card tilt-card">
+              <h3>Adiacent</h3>
+              <p class="role">Full Stack .NET Developer · Genoa</p>
+              <p>DHL enterprise projects, LDAP authentication, intranet integrations, SignalR features, Xamarin mobile app work, Dapper optimization and scheduled C# automations.</p>
+              <div class="chips"><span>ASP.NET</span><span>SignalR</span><span>LDAP</span><span>Dapper</span><span>IIS</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-heading projects-heading" data-reveal>
+          <span class="section-label">03 · Projects</span>
+          <h2>Work that says something</h2>
+        </div>
+
+        <div class="project-grid upgraded-project-grid">
+          <article class="project-card featured tilt-card" data-reveal>
+            <div>
+              <div class="project-kicker">NDT platform · private product</div>
+              <h3>Navaltest</h3>
+              <p>.NET MAUI mobile app, API, PostgreSQL database, Firebase and Hetzner server for inspection and report workflows.</p>
+            </div>
+            <div class="project-meta"><span>.NET MAUI</span><span>API</span><span>PostgreSQL</span><span>Offline-first</span></div>
+          </article>
+
+          <article class="project-card tilt-card" data-reveal data-delay="80">
+            <div>
+              <div class="project-kicker">Enterprise yacht platform</div>
+              <h3>IN-YACHT / Marine Tools</h3>
+              <p>Platform context for managing 60+ superyachts, crews and operations with ASP.NET Core, Blazor, APIs and SQL flows.</p>
+            </div>
+            <div>
+              <div class="project-meta"><span>Blazor</span><span>Dapper</span><span>OData</span></div>
+              <a class="project-link" href="https://www.in-yacht.com/" target="_blank" rel="noopener">Open project <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card featured wemake-card tilt-card" data-reveal>
+            <div>
+              <div class="project-kicker">Australia · We Make Apps</div>
+              <h3>We Make Apps</h3>
+              <p>ASP.NET Core apps and APIs, Mapbox/GeoJSON integrations, analytical dashboards, mobile products, backend performance work and UI improvements.</p>
+            </div>
+            <div class="project-link-grid">
+              <a href="https://wemakeapps.net/tourboss" target="_blank" rel="noopener">Tourboss <span>↗</span></a>
+              <a href="https://creditsnearme.app/" target="_blank" rel="noopener">Credits Near Me NSW <span>↗</span></a>
+              <a href="https://apps.apple.com/au/app/perth-trails/id1586784487" target="_blank" rel="noopener">Perth Trails <span>↗</span></a>
+              <a href="https://www.simoncurwood.com.au/" target="_blank" rel="noopener">SCJ <span>↗</span></a>
+              <a href="https://ezeemobile.com.au/" target="_blank" rel="noopener">EZEE Mobile <span>↗</span></a>
+              <a href="https://rideon.com.au/" target="_blank" rel="noopener">Ride On <span>↗</span></a>
+            </div>
+            <div class="project-meta"><span>.NET</span><span>Mapbox</span><span>Chart.js</span><span>AWS</span><span>UI</span></div>
+          </article>
+
+          <article class="project-card dhl-card tilt-card" data-reveal data-delay="80">
+            <div>
+              <div class="project-kicker">Enterprise logistics · Adiacent</div>
+              <h3>Adiacent</h3>
+              <p>MyCustomsDox, Training, SPREM, MCDC, HubTour and related intranet tools with ASP.NET, SignalR, LDAP and SQL integrations.</p>
+            </div>
+            <div class="project-link-list">
+              <a href="https://mydhl.it/mycustomsdox/" target="_blank" rel="noopener">MyCustomsDox <span>↗</span></a>
+              <a href="https://mydhl.it/training/" target="_blank" rel="noopener">Training <span>↗</span></a>
+              <a href="https://mydhl.it/SpremWeb/" target="_blank" rel="noopener">SPREM <span>↗</span></a>
+              <a href="https://mydhl.it/mcdc/" target="_blank" rel="noopener">MCDC <span>↗</span></a>
+              <a href="https://mydhl.it/hubtour/" target="_blank" rel="noopener">HubTour <span>↗</span></a>
+              <a href="https://www.corepla.it/" target="_blank" rel="noopener">Corepla <span>↗</span></a>
+            </div>
+            <div class="project-meta"><span>ASP.NET</span><span>SignalR</span><span>LDAP</span><span>SQL</span></div>
+          </article>
+
+          <article class="project-card tilt-card" data-reveal>
+            <div>
+              <div class="project-kicker">HirePOS · UI/UX</div>
+              <h3>Hire Software Pricing Plans</h3>
+              <p>UI/UX improvements for HirePOS pricing screens using HTML, CSS, JavaScript and Bootstrap.</p>
+            </div>
+            <div>
+              <div class="project-meta"><span>HTML</span><span>CSS</span><span>Bootstrap</span></div>
+              <a class="project-link" href="https://www.hirepos.com.au/pricing.html" target="_blank" rel="noopener">Open project <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card tilt-card" data-reveal data-delay="80">
+            <div>
+              <div class="project-kicker">Client website</div>
+              <h3>manidorocostruzioni</h3>
+              <p>Website project for a construction and renovation company, focused on clarity, trust and responsive presentation.</p>
+            </div>
+	    <div>
+
+           	 <div class="project-meta"><span>HTML</span><span>CSS</span><span>JS</span></div>
+	    	<a class="project-link" href="https://www.manidorocostruzioni.com" target="_blank" rel="noopener">Open project <span>↗</span></a>
+	     </div>
+
+          </article>
+
+          <article class="project-card tilt-card" data-reveal data-delay="120">
+            <div>
+              <div class="project-kicker">Client website</div>
+              <h3>Pincopall'Arts</h3>
+              <p>Responsive artistic portfolio with bio, exhibitions, art-work pages and contact sections.</p>
+            </div>
+	    <div>
+             <div class="project-meta"><span>Responsive</span><span>Design</span><span>GitHub Pages</span></div> 
+	     <a class="project-link" href="https://www.silviacolace.it/" target="_blank" rel="noopener">Open project <span>↗</span></a>
+	    </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section stack-section" id="stack">
+        <div class="section-heading" data-reveal>
+          <span class="section-label">04 · Stack</span>
+          <h2>Tools I actually use</h2>
+        </div>
+
+        <div class="stack-marquee" aria-hidden="true" data-reveal>
+          <div class="marquee-track">
+            <span>C#</span><span>ASP.NET Core</span><span>Blazor</span><span>SQL Server</span><span>Dapper</span><span>Entity Framework</span><span>DevExpress</span><span>SignalR</span><span>JavaScript</span><span>Bootstrap</span><span>Mapbox</span><span>Chart.js</span>
+            <span>C#</span><span>ASP.NET Core</span><span>Blazor</span><span>SQL Server</span><span>Dapper</span><span>Entity Framework</span><span>DevExpress</span><span>SignalR</span><span>JavaScript</span><span>Bootstrap</span><span>Mapbox</span><span>Chart.js</span>
+          </div>
+        </div>
+
+        <div class="stack-columns">
+          <div class="stack-box" data-reveal>
+            <h3>Backend</h3>
+            <p>C#, ASP.NET, ASP.NET Core, Web API, Razor Pages, Blazor, SignalR, DevExpress, Dapper, Entity Framework.</p>
+          </div>
+          <div class="stack-box" data-reveal data-delay="80">
+            <h3>Frontend</h3>
+            <p>HTML, CSS, JavaScript, jQuery, Bootstrap, responsive UI, Chart.js, GSAP basics and UI polish.</p>
+          </div>
+          <div class="stack-box" data-reveal data-delay="120">
+            <h3>Data & DevOps</h3>
+            <p>SQL Server, SQLite, PostgreSQL, stored procedures, JSON in SQL, GitHub, Azure DevOps, Bitbucket, Jira, IIS, basic CI/CD.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" data-reveal>
+        <div>
+          <span class="section-label">05 · Contact</span>
+          <h2>Let’s build something clean.</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary magnetic" href="mailto:bardi.fisniku@gmail.com?subject=Contact%20via%20Portfolio">bardi.fisniku@gmail.com</a>
+          <a class="btn ghost magnetic" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/bardi-fisniku-311aa2165/">LinkedIn</a>
+          <a class="btn ghost magnetic" target="_blank" rel="noreferrer" href="https://github.com/Fisny">GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Bardi Fisniku</span>
+      <a href="#top">Back to top</a>
     </footer>
+  </div>
 
-    <!-- Contact Modal -->
-    <div class="modal fade" id="modalContact" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content modal-contact">
-                <div class="modal-header justify-content-end" style="border: none;">
-                    <span class="bi bi-x-circle" data-bs-dismiss="modal" aria-label="Close"></span>
-                </div>
-                <div class="modal-body">
-                    <p>
-                        Email:
-                        <a href="mailto:bardi.fisniku@gmail.com?subject=Contact%20via%20Portfolio&body=Hi%20Bardi%2C%20I%20found%20your%20portfolio%20and%20would%20love%20to%20get%20in%20touch!"
-                           style="color: white;"
-                           target="_blank">
-                            bardi.fisniku@gmail.com
-                        </a>
-                    </p>
-                    <p>Linkedin: <a href="https://www.linkedin.com/in/bardi-fisniku-311aa2165/" style="color: white;" target="_blank">Bardi Fisniku</a></p>
-                </div>
-                <div class="modal-footer" style="border: none;">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        AOS.init();
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+  <script src="./script.js"></script>
 </body>
 </html>
